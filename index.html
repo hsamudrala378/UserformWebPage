@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title> Candidate Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="form-container">
+        <form id="UserForm">
+            <h2>Registration Form</h2>
+            <label>Full Name</label>
+            <input type="text" id="fullName" required />
+            <span class="error" id="nameError"></span>
+
+            <label>Email</label>
+            <input type="email" id="email" required />
+            <span class="error" id="emailError"></span>
+
+            <label>Password</label>
+            <input type="password" id="password" required />
+            <span class="error" id="passwordError"></span>
+
+            <label>Language</label>
+            <select id="language">
+                <option value="">--Select--</option>
+                <option value="English">English</option>
+                <option value="Dutch">Dutch</option>
+                <option value="German">German</option>
+
+            </select>  
+            <span class="error" id="languageError"></span>
+
+            <label>About you</label>
+            <textarea id="about" rows="4"></textarea>
+            <span class="error" id="aboutError"></span>
+
+            <label>
+                <input type="checkbox" id="togglePhone" />
+                Add phone Number
+            </label>
+
+            <div id="phoneSection" style="display: none;">
+                <label>Phone</label>
+                <input type="text" id="phone"/>
+                <span class="error" id="phoneError"></span>
+            </div>
+
+            <button type="submit" id="submitBtn" disabled>Save</button>
+            <p id="resultMsg"></p>
+
+        </form>
+     </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

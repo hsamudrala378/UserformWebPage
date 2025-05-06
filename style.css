@@ -1,0 +1,39 @@
+﻿body {
+    font-family: Arial,sans-serif;
+    background-color: #f3f3f3;
+    padding: 20px;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input, textarea, select, button {
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+button {
+    margin-top: 20px;
+    cursor: pointer;
+}
+.error {
+    color: red;
+    font-size:12px;
+}
+#resultMsg {
+    margin-top:10px;
+    font-weight: bold;
+}
+@media (min-width:900px){
+    .container{
+        width: 50%;
+    }
+}
